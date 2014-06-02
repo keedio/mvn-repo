@@ -6,26 +6,26 @@ Maven repository for dependencies not published in official Maven Repository
 
   - In pom.xml from the origin project include:
 ```
-    <distributionManagement\>  
-      <repository\>  
-        <id\>internal.repo\</id\>  
-        <name\>Temporary Staging Repository\</name\>  
-        <url\>file://${project.build.directory}/mvn-repo\</url\>  
-      </repository\>  
-    </distributionManagement\>  
+    <distributionManagement>  
+      <repository>  
+        <id>internal.repo</id>  
+        <name>Temporary Staging Repository</name>  
+        <url>file://${project.build.directory}/mvn-repo</url>  
+      </repository>  
+    </distributionManagement>  
     
     
-    <build\>  
-     <plugins\>  
-      <plugin\>  
-        <artifactId\>maven-deploy-plugin\</artifactId\>  
-        <version\>2.8.1\</version\>  
-        <configuration\>  
-          <altDeploymentRepository\>internal.repo::default::file://${project.build.directory}/mvn-repo\</altDeploymentRepository\>  
-        /configuration\>  
-      </plugin\>  
-     </plugins\>  
-   <\build\>  
+    <build>  
+     <plugins>  
+      <plugin>  
+        <artifactId>maven-deploy-plugin</artifactId>  
+        <version>2.8.1</version>  
+        <configuration>  
+          <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>  
+        </configuration>  
+      </plugin>  
+     </plugins>  
+   <\build>  
 ```
   - Execute mvn deploy  
   
