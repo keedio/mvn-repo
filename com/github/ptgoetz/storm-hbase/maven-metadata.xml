@@ -8,9 +8,13 @@
       <version>0.1.0</version>
     </versions>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <lastUpdated>20140425063103</lastUpdated>
 =======
     <lastUpdated>20140707081015</lastUpdated>
 >>>>>>> parent of 61b9f74... updated
+=======
+    <lastUpdated>20140425063103</lastUpdated>
+>>>>>>> parent of 8963548... storm-hbase and storm-elasticsearch added
   </versioning>
 </metadata>
