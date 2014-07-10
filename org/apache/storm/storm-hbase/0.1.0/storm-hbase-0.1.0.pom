@@ -28,7 +28,6 @@
                   <exclude>org.apache.storm:storm-core</exclude>
                 </excludes>
               </artifactSet>
-              <minimizeJar>true</minimizeJar>
             </configuration>
           </execution>
         </executions>
